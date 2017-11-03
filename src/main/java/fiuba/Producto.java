@@ -21,4 +21,14 @@ public class Producto {
 	public void setVersion(int version) {
 		this.version = version;
 	}
+	
+	@Override
+	public boolean equals(Object other){
+	    if (other == null) return false;
+	    if (other == this) return true;
+	    if (!(other instanceof Producto))return false;
+	    Producto otro = (Producto)other;
+	    if((otro.getNombre() == this.getNombre()) & (otro.getVersion() == this.getVersion())) return true;
+	    return false;
+	}
 }

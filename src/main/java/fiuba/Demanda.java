@@ -20,6 +20,11 @@ public class Demanda {
 		this.setProducto(producto);
 	}
 	
+	public Proyecto iniciarProyecto() {
+		this.estado = "proyecto iniciado";
+		return new Proyecto(id, "iniciado", estimaciones, producto);
+	}
+	
 	public String getEstado() {
 		return estado;
 	}

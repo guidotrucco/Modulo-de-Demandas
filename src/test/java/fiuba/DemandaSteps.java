@@ -4,12 +4,9 @@ import cucumber.api.java.es.Dado;
 import cucumber.api.java.es.Entonces;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.junit.Assert.assertFalse;
 
 public class DemandaSteps {
 	private Demanda demandaObjetivo;
